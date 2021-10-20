@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  font-size: 62.5%;
+  overflow-x: hidden;
+
+  /* Does NOT work on Safari */
+  /* scroll-behavior: smooth; */
+}
+body {
+  background-color: #170a2b4f;
+}
+.container {
+  max-width: 42rem;
+  padding: 0.4rem;
+  margin: 2rem auto;
+  border: solid 0.2rem black;
+  box-shadow: 1rem 1rem 3.2rem #c3b5fd9d;
+  background-color: #fff;
+}
+.output {
+  max-width: 41rem;
+  height: 20rem;
+  border: solid 0.2rem black;
+  margin-bottom: 0.4rem;
+  font-size: 4.2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.input {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style: none;
+  gap: 0.2rem;
+  align-items: center;
+  justify-content: center;
+}
+.num {
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4.2rem;
+  border-right: 4px solid #ddd6fe;
+  border-bottom: 4px solid #ddd6fe;
+  border-left: none;
+  border-top: none;
+  background-color: #c4b5fd;
+  text-align: center;
+  transition: background-color 0.5s;
+}
+.press {
+  border-top: 4px solid #ddd6fe;
+  border-left: 4px solid #ddd6fe;
+  border-bottom: none;
+  border-right: none;
+}
+.num:hover,
+.num:focus {
+  opacity: 0.9;
+  outline: 0;
+  cursor: pointer;
+}
+
+.add {
+  order: 5;
+  grid-row: 4/6;
+  grid-column: 4/5;
+  height: 100%;
+}
+.top {
+  word-wrap: break-word;
+  height: 50%;
+  color: #ddd6fe;
+}
+.bottom {
+  height: 50%;
+  text-align: end;
+  font-size: 240%;
+}
+/* .bottom2 {
+  font-size: 140%;
+} */
