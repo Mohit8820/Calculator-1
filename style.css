@@ -14,11 +14,12 @@ html {
 }
 body {
   background-color: #170a2b4f;
+  padding: 0 0.5rem;
 }
 .container {
   max-width: 42rem;
   padding: 0.4rem;
-  margin: 2rem auto;
+  margin: 1rem auto;
   border: solid 0.2rem black;
   box-shadow: 1rem 1rem 3.2rem #c3b5fd9d;
   background-color: #fff;
@@ -85,6 +86,3 @@ body {
   text-align: end;
   font-size: 240%;
 }
-/* .bottom2 {
-  font-size: 140%;
-} */
